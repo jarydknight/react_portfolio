@@ -1,3 +1,7 @@
+a:link {
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }
@@ -27,6 +31,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.card {
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 @keyframes App-logo-spin {

@@ -1,4 +1,4 @@
-import { CardBody, CardImg, CardText, CardTitle } from "react-bootstrap";
+import { CardBody, CardImg, CardText, CardTitle, Container } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -44,24 +44,31 @@ const projectList = [
 
 const Projects = () => {
     return (
-        <div>
-            <h2>"Projects"</h2>
+        <Container>
+            <Row className="mb-3">
+                <Col>
+                    <h2>"Projects"</h2>
+                </Col>
+            </Row>
+    
             <Row xs={1} md={2} className="g-4">
                 {projectList.map(function(project, index) {
                 return (
                     <Col key={index}>
-                        <Card>
-                            <CardImg variant="top" src={project.img} alt="project display image"/>
-                            <CardBody>
-                                <CardTitle>{project.name}</CardTitle>
-                                <CardText>{project.description}</CardText>
-                            </CardBody>
-                        </Card>
+                        <a href={project.link} target="blank">
+                            <Card>
+                                <CardImg variant="top" src={project.img} alt="project display image"/>
+                                <CardBody>
+                                    <CardTitle>{project.name}</CardTitle>
+                                    <CardText>{project.description}</CardText>
+                                </CardBody>
+                            </Card>
+                        </a>
                     </Col>
                 )
                 })}
             </Row>
-        </div>
+        </Container>
     )
 }
 
