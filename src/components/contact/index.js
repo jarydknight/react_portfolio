@@ -11,7 +11,7 @@ const Contact = () => {
                     <a href="https://github.com/jarydknight" target="_blank" rel="noreferrer">
                         <GithubIcon />
                     </a>
-                    <a href="#home">
+                    <a href="mailto:jarydknightdev@gmail.com">
                         <EmailIcon />
                     </a>
                     <a href="https://linkedin.com/in/jaryd-k" target="_blank" rel="noreferrer">
