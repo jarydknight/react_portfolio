@@ -1,4 +1,5 @@
 import './App.css';
+import About from './components/about';
 import Contact from './components/contact';
 import Navigation from './components/navigation';
 import Projects from './components/projects';
@@ -7,6 +8,7 @@ function App() {
   return (
     <div>
       <Navigation></Navigation>
+      <About></About>
       <Projects></Projects>
       <Contact></Contact>
     </div>

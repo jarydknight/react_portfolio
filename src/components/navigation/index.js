@@ -13,17 +13,19 @@ function Navigation() {
             <NavbarToggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#">Home</Nav.Link>
+                <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link>About</Nav.Link>
                 <Nav.Link>Projects</Nav.Link>
-                <Nav.Link>Contact</Nav.Link>
+                <Nav.Link href="#contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        <h1>Jaryd Knight</h1>
-        <h2>"Full Stack WebDev"</h2>
-        <Image src={require("../../assets/ProfilePic/IMG_7059.jpg")} roundedCircle width={"150px"} height={"150px"} alt="profile pic"/>
+        <Container id="home">
+          <h1>Jaryd Knight</h1>
+          <h2>"Full Stack WebDev"</h2>
+          <Image src={require("../../assets/ProfilePic/IMG_7059.jpg")} roundedCircle width={"150px"} height={"150px"} alt="profile pic"/>
+        </Container>
       </header>
     </div>
     )

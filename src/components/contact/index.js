@@ -5,9 +5,9 @@ import { ReactComponent as LinkedinIcon } from "../../assets/icons/icons8-linked
 
 const Contact = () => {
     return(
-        <Container>
+        <Container id="contact">
             <Row >
-                <Col className="d-flex justify-content-center my-5">
+                <Col className="col-12 d-flex justify-content-center mt-5">
                     <a href="https://github.com/jarydknight" target="_blank" rel="noreferrer">
                         <GithubIcon />
                     </a>
@@ -18,7 +18,9 @@ const Contact = () => {
                         <LinkedinIcon />
                     </a>
                 </Col>
-
+                <Col className="col-12 d-flex justify-content-center mb-3">
+                    <p>2023 © Jaryd Knight ❤️‍🔥</p>
+                </Col>
             </Row>
         </Container>
     )
