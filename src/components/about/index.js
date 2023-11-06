@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
+import SkillsModal from "../SkillsModal";
 import { ReactComponent as JavascriptIcon } from "../../assets/icons/JavascriptIcon.svg"
 import { ReactComponent as GitIcon } from "../../assets/icons/GitIcon.svg";
 import {ReactComponent as NodejsIcon } from "../../assets/icons/NodejsIcon.svg";
@@ -17,7 +18,7 @@ import { ReactComponent as BootstrapIcon } from "../../assets/icons/BootstrapIco
 
 function About() {
     return (
-        <Container>
+        <Container id="about">
             <Row>
                 <Col className="col-12">
                     <h2>"About"</h2>
@@ -45,6 +46,9 @@ function About() {
                     <HerokuIcon className="mx-1 my-1"/>
                     <ApiIcon className="mx-1 my-1"/>
                 </Col>
+            </Row>
+            <Row>
+                <SkillsModal></SkillsModal>
             </Row>
         </Container>
     )

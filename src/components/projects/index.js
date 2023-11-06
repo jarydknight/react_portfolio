@@ -44,7 +44,7 @@ const projectList = [
 
 const Projects = () => {
     return (
-        <Container className="mb-5">
+        <Container id="projects" className="mb-5">
             <Row className="mb-3">
                 <Col>
                     <h2>"Projects"</h2>
