@@ -14,18 +14,25 @@ function SkillsModal () {
         {skill: "MongoDB"},
         {skill: "Express"},
         {skill: "React"},
-        {Skill: "Node.JS"}
+        {skill: "Node.JS"},
+        {skill: "Bootstrap"},
+        {skill: "Webpack"},
+        {skill: "MySQL"},
+        {skill: "Third Party APIs"},
+        {skill: "Handlebars"},
+        {skill: "Command Line"},
+        {skill: "Git"}
     ];
 
     return (
         <>
             <Button variant="dark" onClick={handleShow}>Show More Skills</Button>
 
-            <Modal show={show} scrollable="true" onHide={handleClose}>
+            <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Skills</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body style={{maxHeight:'40vh', overflowY:'auto'}}>
                     <ListGroup>
                         {skillList.map(function(skill, index) {
                             return(
