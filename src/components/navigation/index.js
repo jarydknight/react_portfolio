@@ -3,8 +3,8 @@ import { Container, Image, NavbarToggle, Nav} from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Navigation() {
-    return(
+function Navigation({handleNavClick}) {
+  return(
     <div className="App">
       <header className="App-header">
         <Navbar expand="lg" fixed="top">
@@ -13,9 +13,9 @@ function Navigation() {
             <NavbarToggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#projects">Projects</Nav.Link>
+                <Nav.Link onClick={() => handleNavClick("Home")} href="#home">Home</Nav.Link>
+                <Nav.Link onClick={() => handleNavClick("About")}>About</Nav.Link>
+                <Nav.Link onClick={() => handleNavClick("Projects")} >Projects</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -28,7 +28,7 @@ function Navigation() {
         </Container>
       </header>
     </div>
-    )
+  )
 }
 
 export default Navigation;
