@@ -14,12 +14,15 @@ function Navigation({handleNavClick}) {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link onClick={() => handleNavClick("Home")} href="#home">Home</Nav.Link>
+
                 <Nav.Link onClick={() => handleNavClick("About")}>About</Nav.Link>
+                
                 <Nav.Link onClick={() => handleNavClick("Projects")} >Projects</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
+
         </Navbar>
         <Container id="home">
           <h1>Jaryd Knight</h1>
