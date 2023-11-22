@@ -27,7 +27,7 @@ function About() {
             <Row>
                 <Col className="col-12 col-md-6">
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    As a Full Stack Web Developer, I bring together a diverse skill set to create dynamic and engaging digital experiences. I use my proficiency in languages like Javascript, HTML, CSS to craft intuitive front-end interfaces while leverging front-end frameworks like React to create a seamless user experience. On the back-end my expertise in MongoDB, Express, Node.js, and SQL allows me to create robust and scalable serverside solutions. Utilizing Git and Github for version control alongside deploying applications using services like Heroku I ensure efficient collaboration and seamless deployment.
                     </p>
                 </Col>
                 <Col className="col-12 col-md-6 d-flex flex-wrap justify-content-center">
