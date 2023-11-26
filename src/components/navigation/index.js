@@ -7,11 +7,11 @@ function Navigation({handleNavClick}) {
   return(
     <div className="App">
       <header className="App-header">
-        <Navbar expand="lg" fixed="top" className="bg-body-tertiary">
+        <Navbar collapseOnSelect expand="lg" fixed="top" className="bg-body-tertiary">
           <Container>
             <Navbar.Brand href="#home">JK</Navbar.Brand>
-            <NavbarToggle aria-controls="basic-navbar-nav"/>
-            <Navbar.Collapse id="basic-navbar-nav">
+            <NavbarToggle aria-controls="responsive-navbar-nav"/>
+            <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link onClick={() => handleNavClick("Home")} href="#home">Home</Nav.Link>
 
@@ -22,8 +22,8 @@ function Navigation({handleNavClick}) {
               </Nav>
             </Navbar.Collapse>
           </Container>
-
         </Navbar>
+
         <Container id="home">
           <h1>Jaryd Knight</h1>
           <h2>"Full Stack WebDev"</h2>
