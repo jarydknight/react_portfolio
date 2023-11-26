@@ -73,8 +73,8 @@ const Projects = () => {
                             <CardBody>
                                 <CardTitle>{project.name}</CardTitle>
                                 <CardText>{project.description}</CardText>
-                                <Button href={project.github} target="blank" variant="dark" className="me-3">GitHub Repository</Button>
-                                {project.liveDeployment ? <Button href={project.liveDeployment} target="blank" variant="dark">Live Deployment</Button> : <></>}
+                                <Button href={project.github} target="blank" variant="dark" className="m-1">GitHub Repository</Button>
+                                {project.liveDeployment ? <Button href={project.liveDeployment} target="blank" variant="dark" className="m-1">Live Deployment</Button> : <></>}
                             </CardBody>
                         </Card>
                     </Col>
