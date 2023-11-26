@@ -7,7 +7,7 @@ function Navigation({handleNavClick}) {
   return(
     <div className="App">
       <header className="App-header">
-        <Navbar expand="lg" fixed="top">
+        <Navbar expand="lg" fixed="top" className="bg-body-tertiary">
           <Container>
             <Navbar.Brand href="#home">JK</Navbar.Brand>
             <NavbarToggle aria-controls="basic-navbar-nav"/>
@@ -15,9 +15,9 @@ function Navigation({handleNavClick}) {
               <Nav className="me-auto">
                 <Nav.Link onClick={() => handleNavClick("Home")} href="#home">Home</Nav.Link>
 
-                <Nav.Link onClick={() => handleNavClick("About")}>About</Nav.Link>
+                <Nav.Link onClick={() => handleNavClick("About")} href="#about">About</Nav.Link>
                 
-                <Nav.Link onClick={() => handleNavClick("Projects")} >Projects</Nav.Link>
+                <Nav.Link onClick={() => handleNavClick("Projects")} href="#projects">Projects</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
