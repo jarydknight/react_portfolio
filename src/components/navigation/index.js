@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Image, NavbarToggle, Nav} from "react-bootstrap";
+import { Container, Row, Col, Image, NavbarToggle, Nav} from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -25,9 +25,15 @@ function Navigation({handleNavClick}) {
         </Navbar>
 
         <Container id="home">
-          <h1>Jaryd Knight</h1>
-          <h2>Full Stack WebDev</h2>
-          <Image src={require("../../assets/ProfilePic/IMG_7059.jpg")} roundedCircle width={"150px"} height={"150px"} alt="profile pic"/>
+          <Row className="mt-5">
+            <h1>Jaryd Knight</h1>
+            <h2>Full Stack WebDev</h2>
+          </Row>
+          <Row>
+            <Col className="mx-5 px-5 my-3">
+              <Image src={require("../../assets/ProfilePic/IMG_7059.JPEG")} fluid roundedCircle width={"250px"} height={"250x"} alt="profile pic"/>
+            </Col>
+          </Row>
         </Container>
       </header>
     </div>
