@@ -60,7 +60,7 @@ const Projects = () => {
         <Container id="projects" className="mb-5">
             <Row className="mb-3">
                 <Col>
-                    <h2>"Projects"</h2>
+                    <h2>Projects</h2>
                 </Col>
             </Row>
     

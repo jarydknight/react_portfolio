@@ -21,7 +21,7 @@ function About() {
         <Container id="about">
             <Row>
                 <Col className="col-12">
-                    <h2>"About"</h2>
+                    <h2>About</h2>
                 </Col>
             </Row>
             <Row>

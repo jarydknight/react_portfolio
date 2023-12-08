@@ -26,7 +26,7 @@ function Navigation({handleNavClick}) {
 
         <Container id="home">
           <h1>Jaryd Knight</h1>
-          <h2>"Full Stack WebDev"</h2>
+          <h2>Full Stack WebDev</h2>
           <Image src={require("../../assets/ProfilePic/IMG_7059.jpg")} roundedCircle width={"150px"} height={"150px"} alt="profile pic"/>
         </Container>
       </header>
