@@ -31,7 +31,7 @@ function Navigation({handleNavClick}) {
           </Row>
           <Row>
             <Col className="mx-5 px-5 my-3">
-              <Image src={require("../../assets/ProfilePic/IMG_7059.JPEG")} fluid roundedCircle width={"250px"} height={"250x"} alt="profile pic"/>
+              <Image src={require("../../assets/ProfilePic/IMG_7059.JPEG")} fluid roundedCircle width={"200px"} height={"200x"} alt="profile pic"/>
             </Col>
           </Row>
         </Container>

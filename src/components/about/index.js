@@ -47,8 +47,10 @@ function About() {
                     <ApiIcon className="mx-1 my-1"/>
                 </Col>
             </Row>
-            <Row>
-                <SkillsModal></SkillsModal>
+            <Row className={"justify-content-center my-3"} lg={3}>
+                <Col className={"d-flex justify-content-center"}>
+                    <SkillsModal></SkillsModal>
+                </Col>
             </Row>
         </Container>
     )

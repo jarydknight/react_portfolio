@@ -26,7 +26,7 @@ function SkillsModal () {
 
     return (
         <>
-            <Button variant="dark" onClick={handleShow}>Show More Skills</Button>
+            <Button variant="dark" size="lg" onClick={handleShow}>Show More Skills</Button>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
