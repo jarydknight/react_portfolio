@@ -9,7 +9,7 @@ function Navigation({handleNavClick}) {
     <div className="App">
       <header className="App-header">
         <Navbar collapseOnSelect expand="lg" fixed="top" className="bg-body-tertiary d-block">
-          <Container className="mx-2">
+          <Container fluid className="mx-2">
                 <Navbar.Brand className="m-0" href="#home">
                   <Logo />
                 </Navbar.Brand>
