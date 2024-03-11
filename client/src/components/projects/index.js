@@ -5,11 +5,25 @@ import Row from "react-bootstrap/Row";
 
 const projectList = [
     {
+        name: "Ticket Web App",
+        description: "An IT support ticket web application created using the MERN stack",
+        github: "https://github.com/jarydknight/Ticket-Web-App",
+        img: require("../../assets/images/ticket_web_app.jpg"),
+        liveDeployment: ""
+    },
+    {
         name: "Travel Blog",
         description: "A travel blog project built using Javascript, Node.js, Handlebars, Express.js, MySQL, Sequalize ORM, Amazon S3",
         github: "https://github.com/jarydknight/travel-blog",
         img: require("../../assets/images/travel_blog.jpg"),
         liveDeployment: ""
+    },
+    {
+        name: "Portfolio",
+        description: "Professional portfolio created using React",
+        github: "https://github.com/jarydknight/react_portfolio",
+        img: require("../../assets/images/portfolio.jpg"),
+        liveDeployment: "https://jarydknightdev.com/"
     },
     {
         name: "Social Network API",
@@ -72,7 +86,7 @@ const Projects = () => {
                             <CardImg variant="top" src={project.img} alt="project display image"/>
                             <CardBody>
                                 <CardTitle>{project.name}</CardTitle>
-                                <CardText>{project.description}</CardText>
+                                <CardText className="overflow-auto" style={{height: "5rem"}}>{project.description}</CardText>
                                 <Button href={project.github} target="blank" variant="dark" className="m-1">GitHub Repository</Button>
                                 {project.liveDeployment ? <Button href={project.liveDeployment} target="blank" variant="dark" className="m-1">Live Deployment</Button> : <></>}
                             </CardBody>
