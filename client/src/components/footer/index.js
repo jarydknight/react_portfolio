@@ -3,7 +3,7 @@ import { ReactComponent as GithubIcon } from "../../assets/icons/9034977_logo_gi
 import { ReactComponent as EmailIcon } from "../../assets/icons/4550857_email_gmail_mail_sending_yahoo_icon.svg";
 import { ReactComponent as LinkedinIcon } from "../../assets/icons/icons8-linkedin-500.svg";
 
-const Contact = () => {
+const Footer = () => {
     return(
         <Container id="contact">
             <Row >
@@ -19,11 +19,11 @@ const Contact = () => {
                     </a>
                 </Col>
                 <Col className="col-12 d-flex justify-content-center mb-3">
-                    <p>2023 © Jaryd Knight ❤️‍🔥</p>
+                    <p>2024 © Jaryd Knight ❤️‍🔥</p>
                 </Col>
             </Row>
         </Container>
     )
 }
 
-export default Contact;
+export default Footer;

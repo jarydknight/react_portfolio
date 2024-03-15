@@ -1,5 +1,6 @@
 import About from "../about";
 import Projects from "../projects"
+import Intro from "../intro"
 
 //Uses props to receive state about which category is clicked from the nav compponent in app.js
 function Homepage(props) {
@@ -9,7 +10,7 @@ function Homepage(props) {
         case "About":
             return (<About></About>);
         default:
-            return (<></>);
+            return (<Intro></Intro>);
     }
 }
 

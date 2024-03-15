@@ -19,7 +19,17 @@ a:link {
 
 .App-header {
   background-color: #FFFFFF;
-  min-height: 100vh;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  font-family: "Helvetica Neue";
+}
+
+.intro {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +49,10 @@ a:link {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+.navLink {
+  color: black;
 }
 
 @keyframes App-logo-spin {
