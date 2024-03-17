@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { ReactComponent as DownloadIcon } from "../../assets/icons/DownloadIcon.svg";
+const resume = require("../../assets/files/Jaryd Knight WebDev Resume - Portfolio.pdf");
 
 function Contact() {
 
@@ -44,6 +46,13 @@ function Contact() {
                         </Form.Group>
                         <Button variant="dark" type="submit" className="my-3" formAction="https://formsubmit.co/jarydknightdev@gmail.com" formMethod="POST">Submit</Button>
                     </Form>
+                </Col>
+                <Col className="d-flex justify-content-center">
+                    <a href={resume} download>
+                        <Button className="my-4" variant="dark" size="lg">
+                            Resume  <DownloadIcon className="ml-2" />
+                        </Button>
+                    </a>
                 </Col>
             </Row>
         </Container>
