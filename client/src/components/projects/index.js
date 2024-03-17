@@ -51,7 +51,7 @@ const projectList = [
         description: "The purpose of the project is to use Express to build a server for a note taker so that notes from a client can be stored in the back-end then later retireved and served back to the client",
         github: "https://github.com/jarydknight/note-taker",
         img: require("../../assets/images/note_taker.jpg"),
-        liveDeployment: "https://note-taker-no-jutsu.herokuapp.com"
+        liveDeployment: ""
     },
     {
         name: "Employee Tracker",
