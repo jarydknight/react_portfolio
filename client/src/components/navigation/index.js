@@ -19,19 +19,13 @@ function Navigation() {
                 <NavbarToggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="me-auto">
-                    {/* <Nav.Link onClick={() => handleNavClick("Home")} to="/" >Home</Nav.Link>
+                    <Nav.Link className="navLink" eventKey={1} as={Link} to="/">Home</Nav.Link>
 
-                    <Nav.Link onClick={() => handleNavClick("About")} to="/about" >About</Nav.Link>
-                
-                    <Nav.Link onClick={() => handleNavClick("Projects")} to="/projects">Projects</Nav.Link> */}
+                    <Nav.Link className="navLink" eventKey={1} as={Link} to="/about">About</Nav.Link>
 
-                    <Nav.Link><Link to="/" className="navLink">Home</Link></Nav.Link>
+                    <Nav.Link className="navLink" eventKey={1} as={Link} to="/projects">Projects</Nav.Link>
 
-                    <Nav.Link><Link to="/about" className="navLink">About</Link></Nav.Link>
-
-                    <Nav.Link><Link to="/projects" className="navLink">Projects</Link></Nav.Link>
-
-                    <Nav.Link><Link to="/contact" className="navLink">Contact</Link></Nav.Link>
+                    <Nav.Link className="navLink" eventKey={1} as={Link} to="/contact">Contact</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
           </Container>
