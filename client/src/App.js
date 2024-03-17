@@ -8,17 +8,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Contact from './components/contact';
 
 function App() {
-  //State of category selected when user clicks on nav
-  // const [currentCategory, selectCategory] = useState("/");
-  // const handleNavClick = (category) => {
-  //   selectCategory(category)
-  // }
-
   return (
     <div className='app'>
       <BrowserRouter basename='/'>
           <Navigation></Navigation>
-          {/* <Homepage category={currentCategory}></Homepage> */}
             <Routes>
               <Route exact path='/' element={<Intro />} />
               <Route exact path='/about' element={<About />} />
@@ -29,10 +22,6 @@ function App() {
       </BrowserRouter>
       
     </div>
-    // <div className='app'>
-    //    <Navigation handleNavClick={handleNavClick}></Navigation>
-    //     <Homepage category={currentCategory}></Homepage>
-    // </div>
   );
 }
 
