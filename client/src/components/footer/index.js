@@ -5,7 +5,7 @@ import { ReactComponent as LinkedinIcon } from "../../assets/icons/icons8-linked
 
 const Footer = () => {
     return(
-        <Container id="contact">
+        <Container id="footer">
             <Row >
                 <Col className="col-12 d-flex justify-content-center mt-5">
                     <a href="https://github.com/jarydknight" target="_blank" rel="noreferrer">

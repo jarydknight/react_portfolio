@@ -31,7 +31,7 @@ function Navigation() {
 
                     <Nav.Link><Link to="/projects" className="navLink">Projects</Link></Nav.Link>
 
-                    <Nav.Link><Link to="" className="navLink">Contact</Link></Nav.Link>
+                    <Nav.Link><Link to="/contact" className="navLink">Contact</Link></Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
           </Container>
